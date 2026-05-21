@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import { useAuth } from './hooks/useAuth'
-import SignIn from './pages/SignIn'
-import SignUp from './pages/SignUp'
 
 const FOLDERS = [
   { id: 'inbox', label: 'Inbox', count: 12 },
@@ -96,11 +94,7 @@ export default function App() {
               {user.email}
             </span>
           </div>
-          <button onClick={signOut} style={{
-            width: '100%', background: 'none', border: '1px solid var(--border)',
-            color: 'var(--muted)', borderRadius: 8,
-            padding: '7px', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer',
-          }}>Log Out</button>
+          
         </div>
       </aside>
 
